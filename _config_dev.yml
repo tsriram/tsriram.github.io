@@ -5,4 +5,4 @@ twitter_username: tsriram
 github_username:  tsriram
 markdown: kramdown
 permalink: pretty
-env: production
+env: development
