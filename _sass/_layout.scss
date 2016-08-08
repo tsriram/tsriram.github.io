@@ -100,6 +100,11 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    height: $footer-height;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .footer-heading {
@@ -111,12 +116,18 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    float: right;
+    li {
+        display: inline-block;
+        margin-left: 10px;
+    }
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
+    padding-top: $spacing-unit / 2;
     @extend %clearfix;
 }
 
@@ -169,6 +180,10 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+}
+
+.page-wrap {
+    padding-bottom: $footer-height * 2;
 }
 
 .page-heading {
