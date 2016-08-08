@@ -17,7 +17,10 @@
     </div>
 
     {% include footer.html %}
-
+    {% include twitter_js.html %}
+    {% if site.env == "production" %}
+      {% include ga.html %}
+    {% endif %}
   </body>
 
 </html>
