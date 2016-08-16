@@ -13,4 +13,8 @@ layout: default
   </div>
   {% include sharing_buttons.html %}
 
+  {% if site.env == "production" %}
+    {% include disqus.html %}
+  {% endif %}
+
 </article>
