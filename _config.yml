@@ -6,3 +6,4 @@ github_username:  tsriram
 markdown: kramdown
 permalink: pretty
 env: production
+include: ['apps']
