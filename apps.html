@@ -1,0 +1,37 @@
+---
+layout: page
+title: Apps
+---
+
+<div class="home">
+
+  <header class="post-header">
+    <h1 class="post-title">Apps</h1>
+  </header>
+
+  <!-- <ul class="app-list">
+    {% for my_page in site.pages %}
+      {% if my_page.title and my_page.type == 'app' %}
+        <li>
+          <h2>
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          </h2>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul> -->
+
+  {% for my_page in site.pages %}
+      {% if my_page.title and my_page.type == 'app' %}
+        <div>
+          <h2>
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          </h2>
+          <div class="app-summary">
+            {{ my_page.summary }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+</div>
