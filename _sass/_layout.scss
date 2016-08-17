@@ -195,7 +195,8 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        padding: $spacing-unit 0;
+        border-bottom: 1px solid $grey-color-light;
     }
 }
 
