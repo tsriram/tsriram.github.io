@@ -1,23 +1,74 @@
 ---
 layout: default
+title: About
 ---
 
-<div class="home">
+{% highlight json %}
+{
+  "firstName": "Sriram",
+  "lastName": "Thiagarajan",
+  "job": "Full Stack Web Developer",
+  "location": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "organizations": [
+    {
+      "name": "Pramati Technologies Private Limited",
+      "title": "Senior Development Engineer",
+      "startDate": "2015-05-04",
+      "current": true
+    },
+    {
+      "name": "Asian Paints Limited",
+      "title": "Systems Executive",
+      "startDate": "2009-05-04"
+    }
+  ],
+  "tech": [
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "React",
+    "Alt.js",
+    "Python",
+    "Flask",
+    "AWS",
+    "AWS Lambda",
+    "HTML",
+    "CSS",
+    "SCSS",
+    "Webpack",
+    "MongoDB",
+    "Couchbase Server",
+    "Couchbase Sync Gateway",
+    "RabbitMQ",
+    "Redis"
+  ],
+  "socialProfiles": [
+    {
+      "type": "github",
+      "url": "https://github.com/tsriram"
+    },
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/tsriram/"
+    },
+    {
+      "type": "facebook",
+      "url": "https://www.facebook.com/sriram.thiagarajan"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/thiagarajansriram"
+    },
+    {
+      "type": "googleplus",
+      "url": "https://plus.google.com/u/0/+SriramThiagarajanS"
+    }
+  ]
+}
+{% endhighlight %}
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
