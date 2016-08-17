@@ -1,7 +1,7 @@
 ---
 title: Blood Banks Search - India
 type: app
-layout: app
+layout: default
 summary: React app to search for blood banks in India. It is built based on Flux architecture and uses Alt.js for implementation. It uses static JSON data from data.gov.in hosted on Github.
 app_styles: 
 - https://rawgit.com/tsriram/blood-banks-list/master/dist/css/bloodbanks.css
