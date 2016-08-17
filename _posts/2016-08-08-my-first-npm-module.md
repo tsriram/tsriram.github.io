@@ -3,6 +3,7 @@ layout: post
 title:  My first npm module!
 date:   2016-08-08 15:13:00 +0530
 categories: nodejs
+summary: So I published my first npm module which just transforms a JSON with fields & data arrays to a proper key / value JSON.
 ---
 Of late, I have been dabbling around with APIs from [data.gov.in](https://data.gov.in) to see if I can build any useful app with them for the use of public. While there are APIs to access data, the site also lets users export data in various formats like XML, CSV, JSON etc. 
 
@@ -25,7 +26,7 @@ But the exported JSON, to my surprise, is in a format which is not readily usabl
   "data": [
     [
       "Chennai",
-      "Tamilnadu"
+      "Tamil Nadu"
     ],
     [
       "Mumbai",
@@ -41,7 +42,7 @@ But what I wanted is like this:
 [
   {
     "city": "Chennai",
-    "state": "Tamilnadu"
+    "state": "Tamil Nadu"
   },
   {
     "city": "Mumbai",
