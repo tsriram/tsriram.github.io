@@ -3,7 +3,10 @@ layout: default
 title: About
 ---
 
-<h2>About me!</h2>
+## About me!
+
+If you're not from programming background, the below might look intimidating at the first sight. Trust me, it's not. You do not need to be a programmer to understand the below information. Just read through and you should be able to get the gist of it.
+
 {% highlight json %}
 {
   "firstName": "Sriram",
@@ -72,4 +75,5 @@ title: About
 }
 {% endhighlight %}
 
+Again, if you're not from the programming background, completed reading this and able to digest the information, Congratulations! You have learnt something new today called [JSON](https://en.wikipedia.org/wiki/JSON){:target="_blank"} :)
 
